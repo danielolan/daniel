@@ -1,10 +1,26 @@
 
 def fibo(n):
-	# Escriba aquí el código para calcular el n-esimo valor de la serie de fibonacci de forma no recursiva (use ciclos).
+	
+  	a = 0
+ 	 b = 1
+  
+  	for K in range(n):
+    		c = a+b
+    		a = b
+    		b = c
+    
+   return b
+   
+   for x in range(10):
+      
 	pass
 
 def fibo_rec(n):
-	# Escriba aquí el código para calcular el n-esimo valor de la serie de fibonacci de forma recursiva (NO use ciclos).
+	if n < 2:
+		return n
+	return fibo_rec(n-1)+ fibo_rec(n-2) 
+	for x in range(10):
+		
 	pass
 	
 
